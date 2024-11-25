@@ -13,9 +13,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Echo message1
+      - name: Echo message1-1
         run: |
           echo "Message from input: ${{ inputs.message }}"
-      - name: Echo message2
+      - name: Echo message1-2
+        run: |
+          echo "Message from input: ${{ inputs.message }}"
+
+  simple-task2:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Echo message2-1
+        run: |
+          echo "Message from input: ${{ inputs.message }}"
+      - name: Echo message2-2
         run: |
           echo "Message from input: ${{ inputs.message }}"
