@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Echo message
+      - name: Echo message1
+        run: |
+          echo "Message from input: ${{ inputs.message }}"
+      - name: Echo message2
         run: |
           echo "Message from input: ${{ inputs.message }}"
